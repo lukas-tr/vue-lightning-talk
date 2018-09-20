@@ -3,10 +3,11 @@
 
 ---
 
-## Vue
-### The basics
+### Vue
+##### The basics
 
 +++
+@title[Basic Vue app]
 
 ```
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -14,12 +15,12 @@
 {{ welcomeMessage }}
 </div>
 <script>
-  const app = new Vue({
-    el: "#app",
-    data: {
-      welcomeMessage: "Hello World!"
-    }
-  })
+const app = new Vue({
+  el: "#app",
+  data: {
+    welcomeMessage: "Hello World!"
+  }
+})
 </script>
 ```
 
@@ -28,6 +29,8 @@
 @[6]
 @[7]
 @[8-10]
+
+###### a basic Vue app
 
 ---
 
