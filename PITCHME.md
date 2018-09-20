@@ -1,10 +1,10 @@
 # Vue and Vue CLI
 ### a framework for building user interfaces
 
----
+---?image=https://vuejs.org/images/logo.png&size=auto 50%&position=bottom
 
-### Vue
-##### The basics
+## Vue
+#### The basics
 
 +++
 @title[Basic Vue app]
@@ -27,42 +27,19 @@
 @[1]
 @[2-4]
 @[5,6,12]
-@[7]
-@[8-10]
+@[5,7,12]
+@[5,8-10,12]
 
 ###### a basic Vue app
 
----
-
-### Code-Blocks
-##### Using
-#### **Code-Presenting**
-
-![Press Down Key](assets/down-arrow.png)
-
 +++
-@title[Sample Code Presenting]
 
-```python
-from time import localtime
+### Basic features
 
-activities = {8: 'Sleeping', 9: 'Commuting', 17: 'Working',
-              18: 'Commuting', 20: 'Eating', 22: 'Resting' }
+@ul[squares]
 
-time_now = localtime()
-hour = time_now.tm_hour
+- Reactive
+- Components
+- Virtual DOM
 
-for activity_time in sorted(activities.keys()):
-    if hour < activity_time:
-        print activities[activity_time]
-        break
-else:
-    print 'Unknown, AFK or sleeping!'
-```
-
-@[1]
-@[3-4]
-@[6-7]
-@[9-14]
-
-###### Use code-presenting to **step-thru** code <p> from directly within your presentation 
+@ulend
