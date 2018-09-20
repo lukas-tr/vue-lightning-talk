@@ -1,7 +1,9 @@
+---?image=https://vuejs.org/images/logo.png&size=auto 50%&position=bottom&color=#CCDAE7
+
 # Vue and Vue CLI
 ### a framework for building user interfaces
 
----?image=https://vuejs.org/images/logo.png&size=auto 50%&position=bottom&color=white
+---
 
 ## Vue
 #### The basics
