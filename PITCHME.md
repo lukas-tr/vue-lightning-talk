@@ -1,13 +1,9 @@
----?image=https://vuejs.org/images/logo.png&size=auto 50%&position=bottom&color=#CCDAE7
+---?image=https://vuejs.org/images/logo.png&size=auto 50%&position=bottom 30px&color=#CCDAE7
 
+@snap[north]
 # Vue and Vue CLI
 ### a framework for building user interfaces
-
-@div[left-50]
-<br><br>
-![Logo](https://vuejs.org/images/logo.png)
-@divend
-
+@snapend
 
 ---
 
