@@ -9,18 +9,18 @@
 +++
 @title[Basic Vue app]
 
-```
+```html
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <div id="app">
-{{ welcomeMessage }}
+  {{ welcomeMessage }}
 </div>
 <script>
-const app = new Vue({
-  el: "#app",
-  data: {
-    welcomeMessage: "Hello World!"
-  }
-})
+  const app = new Vue({
+    el: "#app",
+    data: {
+      welcomeMessage: "Hello World!"
+    }
+  })
 </script>
 ```
 
