@@ -3,6 +3,12 @@
 # Vue and Vue CLI
 ### a framework for building user interfaces
 
+@div[left-50]
+<br><br>
+![Logo](https://vuejs.org/images/logo.png)
+@divend
+
+
 ---
 
 ## Vue
