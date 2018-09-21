@@ -242,6 +242,22 @@ export default {
 
 ---
 
+## Angular vs Vue
+
++++
+
+@ul[squares]
+
+- Very similar
+- Market share
+- Syntax complexity
+
+@ulend
+
++++?image=downloads.png&size=auto&position=center
+
+---
+
 ### Thanks
 
-@size[0.5em](Sources: <a href="https://vuejs.org/">Vue Docs</a>, <a href="https://cli.vuejs.org/">Vue CLI Docs</a>)
+@size[0.5em](Sources: <a href="https://vuejs.org/">Vue Docs</a>, <a href="https://cli.vuejs.org/">Vue CLI Docs</a>, <a href="https://www.npmtrends.com/vue-vs-@angular/core">npmtrends.com</a>)
