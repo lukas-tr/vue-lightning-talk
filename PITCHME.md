@@ -1,4 +1,4 @@
----?image=https://vuejs.org/images/logo.png&size=auto 75%&position=bottom
+---?image=https://vuejs.org/images/logo.png&size=auto 75%&position=bottom&opacity=25
 
 # Vue and Vue CLI
 
