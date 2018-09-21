@@ -124,6 +124,16 @@ $ npm run serve
 
 +++
 
+@ul[squares]
+
+- Encapsulated state
+- Reusable
+- Communication with events and props (or a store)
+
+@ulend
+
++++
+
 ### Lifecycle Hooks
 
 ```javascript
@@ -210,17 +220,10 @@ export default {
   components: {
     User
   },
-  data() {
-    return {
-      users: []
-    };
-  },
+  data: () => () => ({ users: [] }),
   methods: {
     addUser() {
-      const name = prompt("Enter a name", "John Doe");
-      if (name) {
-        this.users.push(name);
-      }
+      this.users.push(prompt("Enter a name", "John Doe"));
     }
   },
   watch: {
@@ -233,9 +236,9 @@ export default {
 ```
 
 @[6-10] List rendering
-@[15,16,19-21,41] Components
-@[15,26-34,41] Methods
-@[15,35-41] Watchers
+@[15,16,19-21,34] Components
+@[15,23-27,34] Methods
+@[15,28-34] Watchers
 
 ---
 
