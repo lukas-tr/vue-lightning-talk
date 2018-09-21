@@ -1,15 +1,13 @@
----?image=https://vuejs.org/images/logo.png&size=auto 50%&position=bottom
-
-@snap[north]
+---?image=https://vuejs.org/images/logo.png&size=auto 75%&position=bottom
 
 # Vue and Vue CLI
-### a framework for building user interfaces
 
-@snapend
+### a framework for building user interfaces
 
 ---
 
 ## Vue
+
 #### The basics
 
 +++
@@ -40,12 +38,200 @@
 
 +++
 
-### Basic features
+### Core concepts
 
 @ul[squares]
 
+- Declarative
 - Reactive
-- Components
+- Uses components
 - Virtual DOM
 
 @ulend
+
++++
+
+### Additional features
+
+@ul[squares]
+
+- Client-side routing
+- State management
+
+@ulend
+
+---
+
+## Vue CLI
+
+#### The basics
+
++++
+
+```bash
+$ npm i -g @vue/cli
+$ vue create my-app
+? Please pick a preset:
+> vue-component-1 (vue-router, babel, eslint, unit-jest)
+  default (babel, eslint)
+  Manually select features
+$ cd demo
+$ npm run serve
+```
+
+@[1]
+@[2-6]
+@[7-8]
+
++++
+
+### Parts
+
+@ul[squares]
+
+- CLI `@vue/cli`
+- CLI Service `@vue/cli-service`
+- CLI Plugins `@vue/cli-plugin-`
+
+@ulend
+
++++
+
+### Single File Components
+
+@ul[squares]
+
+- `<template>`
+- `<script>`
+- `<style>`
+
+@ulend
+
++++
+
+### Development
+
+@ul[squares]
+
+- `vue-loader`
+- Chrome/Firefox Dev Tools
+
+@ulend
+
+---
+
+## Vue Components
+
++++
+
+### Lifecycle Hooks
+
+```javascript
+export default {
+  mounted() {
+    console.log("Hi there");
+  }
+};
+```
+
++++
+
+### Example
+
+```html
+<template>
+    <div>
+        <div>
+            <label>First Name:
+                <input class="red" v-model="firstName" />
+            </label>
+            <div>Hi there, {{fullName}}!</div>
+        </div>
+        <div>
+            <button @click="show = !show">Toggle show</button>
+            <div v-if="show">I might be hidden</div>
+        </div>
+    </div>
+</template>
+<script>
+export default {
+  data() {
+    return {
+      firstName: "John",
+      lastName: "Doe",
+      show: false
+    };
+  },
+  computed: {
+    fullName() {
+      return `${this.firstName} ${this.lastName}`;
+    }
+  }
+};
+</script>
+<style scoped>
+.red {
+  background-color: red;
+}
+</style>
+```
+
+@[4-6] Two-way data binding
+@[15,17-23,30] data
+@[7] Mustaches
+@[15,24-28,30] computed properties
+@[10] Events
+@[11] Conditional rendering
+
++++
+
+### Second example
+
+```html
+<template>
+    <div>
+        <div>
+            <button @click="addUser">Add user</button>
+             <ul>
+                <user v-for="(user, index) in users" :key="index" :name="user" />
+            </ul>
+        </div>
+    </div>
+</template>
+<script>
+import User from "./User.vue";
+
+export default {
+  components: {
+    User
+  },
+  data() {
+    return {
+      users: []
+    };
+  },
+  methods: {
+    addUser() {
+      const name = prompt("Enter a name", "John Doe");
+      if (name) {
+        this.users.push(name);
+      }
+    }
+  },
+  watch: {
+    users() {
+      alert("Users changed");
+    }
+  }
+};
+</script>
+```
+
+@[6] List rendering
+@[11,12,15-17,37] Components
+@[11,22-30,37] Methods
+@[11,31-35] Watchers
+
+---
+
+#### Thanks
