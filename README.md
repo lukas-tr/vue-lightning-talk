@@ -1,3 +1,8 @@
 # vue-lightning-talk
 
-https://gitpitch.com/lukas-tr/vue-lightning-talk/master
+[Slides](https://gitpitch.com/lukas-tr/vue-lightning-talk/master)
+
+```bash
+npm i
+npm run serve
+```
