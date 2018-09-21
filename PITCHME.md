@@ -177,6 +177,7 @@ export default {
 ```
 
 @[4-6] Two-way data binding
+@[31-35] Style
 @[15,17-23,30] data
 @[7] Mustaches
 @[15,24-28,30] computed properties
@@ -193,7 +194,11 @@ export default {
         <div>
             <button @click="addUser">Add user</button>
              <ul>
-                <user v-for="(user, index) in users" :key="index" :name="user" />
+                <user
+                  v-for="(user, index) in users"
+                  :key="index"
+                  :name="user"
+                />
             </ul>
         </div>
     </div>
@@ -227,10 +232,10 @@ export default {
 </script>
 ```
 
-@[6] List rendering
-@[11,12,15-17,37] Components
-@[11,22-30,37] Methods
-@[11,31-35] Watchers
+@[6-10] List rendering
+@[15,16,19-21,41] Components
+@[15,26-34,41] Methods
+@[15,35-41] Watchers
 
 ---
 
