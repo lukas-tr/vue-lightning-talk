@@ -239,4 +239,6 @@ export default {
 
 ---
 
-#### Thanks
+### Thanks
+
+@size[0.5em](Sources: <a href="https://vuejs.org/">Vue Docs</a>, <a href="https://cli.vuejs.org/">Vue CLI Docs</a>)
