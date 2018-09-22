@@ -150,8 +150,9 @@ export default {
 
 +++
 
-#### View the following examples
-##### <a href="https://lukas-tr.github.io/vue-lightning-talk/">lukas-tr.github.io/vue-lightning-talk</a>
+### View the following examples here
+
+@size[0.5em](<a href="https://lukas-tr.github.io/vue-lightning-talk/">lukas-tr.github.io/vue-lightning-talk</a>)
 
 +++
 
