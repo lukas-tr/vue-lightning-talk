@@ -1,8 +1,12 @@
----?image=https://vuejs.org/images/logo.png&size=auto 75%&position=bottom&opacity=25
+---?image=https://vuejs.org/images/logo.png&size=auto 80%&position=center&opacity=25
+
+---
 
 # Vue and Vue CLI
 
 ### a framework for building user interfaces
+
+@size[0.5em](<a href="https://github.com/lukas-tr/vue-lightning-talk">github.com/lukas-tr/vue-lightning-talk</a>)
 
 ---
 
@@ -75,7 +79,7 @@ $ vue create my-app
 > vue-component-1 (vue-router, babel, eslint, unit-jest)
   default (babel, eslint)
   Manually select features
-$ cd demo
+$ cd my-app
 $ npm run serve
 ```
 
@@ -146,6 +150,11 @@ export default {
 
 +++
 
+#### View the following examples
+##### <a href="https://lukas-tr.github.io/vue-lightning-talk/">lukas-tr.github.io/vue-lightning-talk</a>
+
++++
+
 ### Example
 
 ```html
@@ -186,11 +195,11 @@ export default {
 </style>
 ```
 
+@[15,17-23,30] data
 @[4-6] Two-way data binding
 @[31-35] Style
-@[15,17-23,30] data
-@[7] Mustaches
 @[15,24-28,30] computed properties
+@[7] Mustaches
 @[10] Events
 @[11] Conditional rendering
 
@@ -220,7 +229,7 @@ export default {
   components: {
     User
   },
-  data: () => () => ({ users: [] }),
+  data: () => ({ users: [] }),
   methods: {
     addUser() {
       this.users.push(prompt("Enter a name", "John Doe"));
@@ -235,8 +244,10 @@ export default {
 </script>
 ```
 
+@[15,16,22,34] Data
 @[6-10] List rendering
 @[15,16,19-21,34] Components
+@[4] List rendering
 @[15,23-27,34] Methods
 @[15,28-34] Watchers
 
