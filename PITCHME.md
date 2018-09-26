@@ -48,8 +48,6 @@
 
 - Declarative
 - Reactive
-- Uses components
-- Virtual DOM
 
 @ulend
 
@@ -59,6 +57,8 @@
 
 @ul[squares]
 
+- Uses components
+- Virtual DOM
 - Client-side routing
 - State management
 
@@ -119,6 +119,7 @@ $ npm run serve
 
 - `vue-loader`
 - Chrome/Firefox Dev Tools
+- Vetur (VS Code)
 
 @ulend
 
@@ -128,25 +129,15 @@ $ npm run serve
 
 +++
 
+### Components
+
 @ul[squares]
 
 - Encapsulated state
 - Reusable
-- Communication with events and props (or a store)
+- Communication with events and props
 
 @ulend
-
-+++
-
-### Lifecycle Hooks
-
-```javascript
-export default {
-  mounted() {
-    console.log("Hi there");
-  }
-};
-```
 
 +++
 
@@ -252,17 +243,30 @@ export default {
 @[15,23-27,34] Methods
 @[15,28-34] Watchers
 
++++
+
+### Lifecycle Hooks
+
+```javascript
+export default {
+  mounted() {
+    console.log("Hi there");
+  }
+};
+```
 ---
 
 ## Angular vs Vue
 
 +++
 
+### Differences and similarities
+
 @ul[squares]
 
-- Very similar
-- Market share
 - Syntax complexity
+- Market share
+- 3rd party libraries
 
 @ulend
 
