@@ -72,23 +72,6 @@
 
 +++
 
-```bash
-$ npm i -g @vue/cli
-$ vue create my-app
-? Please pick a preset:
-> vue-component-1 (vue-router, babel, eslint, unit-jest)
-  default (babel, eslint)
-  Manually select features
-$ cd my-app
-$ npm run serve
-```
-
-@[1]
-@[2-6]
-@[7-8]
-
-+++
-
 ### Parts
 
 @ul[squares]
@@ -141,12 +124,6 @@ $ npm run serve
 
 +++
 
-### View the following examples here
-
-@size[0.5em](<a href="https://lukas-tr.github.io/vue-lightning-talk/">lukas-tr.github.io/vue-lightning-talk</a>)
-
-+++
-
 ### Example
 
 ```html
@@ -195,65 +172,8 @@ export default {
 @[10] Events
 @[11] Conditional rendering
 
-+++
+@size[0.5em](<a href="https://lukas-tr.github.io/vue-lightning-talk/">lukas-tr.github.io/vue-lightning-talk</a>)
 
-### Second example
-
-```html
-<template>
-    <div>
-        <div>
-            <button @click="addUser">Add user</button>
-             <ul>
-                <user
-                  v-for="(user, index) in users"
-                  :key="index"
-                  :name="user"
-                />
-            </ul>
-        </div>
-    </div>
-</template>
-<script>
-import User from "./User.vue";
-
-export default {
-  components: {
-    User
-  },
-  data: () => ({ users: [] }),
-  methods: {
-    addUser() {
-      this.users.push(prompt("Enter a name", "John Doe"));
-    }
-  },
-  watch: {
-    users() {
-      alert("Users changed");
-    }
-  }
-};
-</script>
-```
-
-@[15,16,22,34] Data
-@[6-10] List rendering
-@[15,16,19-21,34] Components
-@[4] List rendering
-@[15,23-27,34] Methods
-@[15,28-34] Watchers
-
-+++
-
-### Lifecycle Hooks
-
-```javascript
-export default {
-  mounted() {
-    console.log("Hi there");
-  }
-};
-```
 ---
 
 ## Angular vs Vue
