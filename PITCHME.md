@@ -1,4 +1,5 @@
 ---?image=https://vuejs.org/images/logo.png&size=auto 80%&position=center&opacity=25
+@title[Logo]
 
 ---
 
@@ -191,6 +192,7 @@ export default {
 @ulend
 
 +++?image=downloads.png&size=auto&position=center
+@title[Market share]
 
 ---
 
